@@ -1,0 +1,6 @@
+import { PipeTransform } from '@angular/core';
+export declare class StickedClassesPipe implements PipeTransform {
+    private exceptionClasses;
+    constructor();
+    transform(classes: string): string;
+}

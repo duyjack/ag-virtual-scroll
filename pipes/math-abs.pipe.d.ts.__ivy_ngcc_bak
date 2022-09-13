@@ -1,0 +1,5 @@
+import { PipeTransform } from '@angular/core';
+export declare class MathAbsPipe implements PipeTransform {
+    constructor();
+    transform(value: number): number;
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"math-abs.pipe.d.ts","sources":["math-abs.pipe.d.ts"],"names":[],"mappings":"AAAA;;AACA;AACA;AACA;;;AACA","sourcesContent":["import { PipeTransform } from '@angular/core';\nexport declare class MathAbsPipe implements PipeTransform {\n    constructor();\n    transform(value: number): number;\n}\n"]}

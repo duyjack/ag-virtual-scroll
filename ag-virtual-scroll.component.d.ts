@@ -1,0 +1,78 @@
+import { ElementRef, AfterViewInit, OnChanges, SimpleChanges, Renderer2, OnInit, AfterContentChecked, OnDestroy } from '@angular/core';
+import { AgVsItemComponent } from './ag-vs-item/ag-vs-item.component';
+import * as ɵngcc0 from '@angular/core';
+export declare class AgVirtualSrollComponent implements OnInit, AfterViewInit, OnChanges, OnDestroy, AfterContentChecked {
+    private elRef;
+    private renderer;
+    private itemsContainerElRef;
+    private queryVsItems;
+    minRowHeight: number;
+    height: string;
+    originalItems: any[];
+    private onItemsRender;
+    prevOriginalItems: any[];
+    items: any[];
+    private subscripAllVsItem;
+    private _indexCurrentSticky;
+    private get indexCurrentSticky();
+    private set indexCurrentSticky(value);
+    private get indexPrevSticky();
+    private set indexPrevSticky(value);
+    private indexNextSticky;
+    private indexesPrevStick;
+    currentStickyItem: StickyItem;
+    currentScroll: number;
+    contentHeight: number;
+    paddingTop: number;
+    startIndex: number;
+    endIndex: number;
+    private isTable;
+    private scrollIsUp;
+    private lastScrollIsUp;
+    private previousItemsHeight;
+    containerWidth: number;
+    private get itemsNoSticky();
+    get vsItems(): AgVsItemComponent[];
+    get numberItemsRendred(): number;
+    get el(): HTMLElement;
+    get itemsContainerEl(): HTMLElement;
+    constructor(elRef: ElementRef<HTMLElement>, renderer: Renderer2);
+    ngAfterViewInit(): void;
+    ngOnInit(): void;
+    ngOnChanges(changes: SimpleChanges): void;
+    ngAfterContentChecked(): void;
+    private currentAndPrevItemsAreDiff;
+    private onScroll;
+    private prepareDataItems;
+    private registerCurrentItemsHeight;
+    private getDimensions;
+    private prepareDataVirtualScroll;
+    private numberItemsCanRender;
+    private manipuleRenderedItems;
+    private getInsideChildrens;
+    private checkIsTable;
+    private checkStickItem;
+    private findCurrentStickyByIndex;
+    private setPrevAsCurrentSticky;
+    private getIndexCurrentSticky;
+    private getIndexNextSticky;
+    private currentStickIsEnded;
+    private updateVsItems;
+    private onStickyComponentChanged;
+    ngOnDestroy(): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<AgVirtualSrollComponent, never>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<AgVirtualSrollComponent, "ag-virtual-scroll", never, { "minRowHeight": "min-row-height"; "height": "height"; "originalItems": "items"; }, { "onItemsRender": "onItemsRender"; }, ["queryVsItems"], ["*"]>;
+}
+export declare class StickyItem {
+    comp: AgVsItemComponent;
+    index: number;
+    offsetTop: number;
+    vsIndex: number;
+    diffTop: number;
+    isUp: boolean;
+    height: number;
+    outside: boolean;
+    constructor(obj?: Partial<StickyItem>);
+}
+
+//# sourceMappingURL=ag-virtual-scroll.component.d.ts.map

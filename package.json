@@ -1,0 +1,61 @@
+{
+  "name": "ag-virtual-scroll",
+  "version": "1.3.2",
+  "repository": "https://github.com/ericferreira1992/ag-virtual-scroll",
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular4",
+    "angular5",
+    "angular6",
+    "angular7",
+    "angular8",
+    "angular9",
+    "angular10",
+    "angular11",
+    "virtual",
+    "scroll",
+    "virtual-scroll",
+    "height",
+    "random",
+    "unequal",
+    "random-height",
+    "scroll",
+    "ng",
+    "ag",
+    "agx",
+    "ngx"
+  ],
+  "author": "ericferreira <ericferreira1992@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@angular/animations": "^11.0.4",
+    "@angular/common": "^11.0.4",
+    "@angular/compiler": "^11.0.4",
+    "@angular/core": "^11.0.4"
+  },
+  "main": "bundles/ag-virtual-scroll.umd.js",
+  "module_ivy_ngcc": "__ivy_ngcc__/fesm2015/ag-virtual-scroll.js",
+  "module": "fesm2015/ag-virtual-scroll.js",
+  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ag-virtual-scroll.js",
+  "es2015": "fesm2015/ag-virtual-scroll.js",
+  "esm2015": "esm2015/ag-virtual-scroll.js",
+  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ag-virtual-scroll.js",
+  "fesm2015": "fesm2015/ag-virtual-scroll.js",
+  "typings": "ag-virtual-scroll.d.ts",
+  "metadata": "ag-virtual-scroll.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "11.0.9",
+    "fesm2015": "11.0.9",
+    "module": "11.0.9",
+    "typings": "11.0.9"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  }
+}

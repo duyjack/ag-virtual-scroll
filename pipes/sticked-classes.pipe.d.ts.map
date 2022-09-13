@@ -1,0 +1,1 @@
+{"version":3,"file":"sticked-classes.pipe.d.ts","sources":["sticked-classes.pipe.d.ts"],"names":[],"mappings":"AAAA;;AACA;AACA;AACA;AACA;;;AACA","sourcesContent":["import { PipeTransform } from '@angular/core';\nexport declare class StickedClassesPipe implements PipeTransform {\n    private exceptionClasses;\n    constructor();\n    transform(classes: string): string;\n}\n"]}
